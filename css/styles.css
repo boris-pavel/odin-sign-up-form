@@ -3,17 +3,31 @@
     src: url(../fonts/Norse-Bold.otf);
 }
 
-body{
+body {
     display: flex;
     height: 100vh;
+    font-family: 'Roboto';
 }
 
-.form{
+.form {
     flex: 2;
-    background-color: black;
+    background-color: #f9fafc;
+    padding-top: 5%;
 }
 
-.background{
+h1,
+.name,
+.contact,
+.pwd {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.inputs>h1 {
+    margin-top: 0;
+}
+
+.background {
     flex: 1;
     background: url(../img/bg-img.jpg) no-repeat center center / cover;
     color: white;
@@ -23,25 +37,86 @@ body{
 
 }
 
-a{
-    color:white;
+a {
+    color: white;
 }
 
-.logo{
-    background-color: rgba(0,0,0,0.3);
+.logo {
+    background-color: rgba(0, 0, 0, 0.3);
     font-family: 'norse-bold';
-    font-size: 10rem;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20%;
+    margin-top: 40%;
 }
 
-.logo > img {
-    width: 10rem;
+.logo>img {
+    width: 5rem;
     height: auto;
 }
 
 .credit {
     text-align: center;
+}
+
+h1>span {
+    display: block;
+}
+
+
+.inputs {
+    background-color: white;
+    box-shadow: 10px 5px 5px gray;
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+button {
+    margin-top: 3%;
+    margin-left: 5%;
+    padding: 1% 5%;
+    background-color: #596D48;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    font-weight: bold;
+}
+
+.name,
+.contact,
+.pwd {
+    display: flex;
+}
+
+label,
+input {
+    display: block;
+}
+
+.first-name,
+.last-name,
+.email,
+.telephone,
+.password,
+.confirm-password {
+    margin: 1%;
+}
+
+h2 {
+    margin-left: 5%;
+}
+
+label {
+    text-transform: uppercase;
+    color: #9d9ea0;
+    font-weight: bold;
+}
+h2>span {
+    color: #596D48;
+}
+
+h1>span:nth-child(2) {
+    margin-top: 3%;
 }
