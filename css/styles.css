@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    height: 100vh;
+}
+
+.form{
+    flex: 2;
+    background-color: black;
+}
+
+.background{
+    flex: 1;
+    background: url(../img/bg-img.jpg) no-repeat center center / cover;
+    color: white;
+}
+
+a{
+    color:white;
+}
