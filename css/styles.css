@@ -6,7 +6,7 @@
 body {
     display: flex;
     height: 100vh;
-    font-family: 'Roboto';
+    font-family: sans-serif;
 }
 
 .form {
@@ -67,8 +67,7 @@ h1>span {
 
 .inputs {
     background-color: white;
-    box-shadow: 10px 5px 5px gray;
-    border-radius: 10px;
+    box-shadow: 3px 5px 5px gray;
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -88,6 +87,7 @@ button {
 .contact,
 .pwd {
     display: flex;
+    flex-wrap: wrap;
 }
 
 label,
@@ -130,10 +130,10 @@ input {
 
 input:focus {
     border-color: blue;
+    outline: none;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.password:invalid,
-.confirm-password:invalid {
+input:invalid{
     border-color: red;
 }
